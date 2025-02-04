@@ -2,9 +2,12 @@
 
 const pupsUrl = 'http://localhost:3000/pups';
 
-function getAllGogs(){
+document.addEventListener("DOMContentLoaded", () => {
     fetch(pupsUrl)
-}
+    .then((response) = response.json())
+    .then((pups))
+})
+
 
 const div = document.getElementById("dog-bar");
 const span = document.createElement("span");
