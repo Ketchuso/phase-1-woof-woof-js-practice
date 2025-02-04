@@ -5,16 +5,26 @@ const pupsUrl = 'http://localhost:3000/pups';
 document.addEventListener("DOMContentLoaded", () => {
     fetch(pupsUrl)
     .then((response) => response.json())
-    .then( pups => {const dogBar = 
-    }
+    .then( pups => {
+        const dogBar = document.getElementById("dog-bar")
+        pups.forEach((addSpan))
+    })
+    
 
-    const div = document.getElementById("dog-bar");
-    const span = document.createElement("span");
-    div.appendChild("span");
+    // const div = document.getElementById("dog-bar");
+    // const span = document.createElement("span");
+    // div.appendChild("span");
 })
 
-const dogBar = document.getElementById('dog-bar');
-dogBar.append(newSpan);
+function addSpan(span){
+    const span = document.createElement("span");
+    span.textContent = `
+    Name:
+    
+    
+    
+    ` 
+}
 
 // function renderBrew(brew){
 //     const div = document.createElement('div');
