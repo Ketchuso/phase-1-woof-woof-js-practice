@@ -4,17 +4,41 @@ const pupsUrl = 'http://localhost:3000/pups';
 
 document.addEventListener("DOMContentLoaded", () => {
     fetch(pupsUrl)
-    .then((response) = response.json())
-    .then((pups))
+    .then((response) => response.json())
+    .then( pups => {const dogBar = 
+    }
+
+    const div = document.getElementById("dog-bar");
+    const span = document.createElement("span");
+    div.appendChild("span");
 })
-
-
-const div = document.getElementById("dog-bar");
-const span = document.createElement("span");
-div.appendChild("span");
 
 const dogBar = document.getElementById('dog-bar');
 dogBar.append(newSpan);
+
+// function renderBrew(brew){
+//     const div = document.createElement('div');
+//     div.id = `brew-card-${brew.id}`;
+//     div.className='card alert-success';
+//     div.style = 'padding: 20px; margin: 20px;'
+
+//     const icon = document.createElement('h1');
+//     icon.textContent='🍺';
+    
+//     const header = document.createElement('h3')
+//     header.textContent = `${brew.name}`;
+
+//     const p = document.createElement('p')
+//     p.id = `brew-info-${brew.id}`
+//     p.textContent = `
+//         Type: ${brew.brewery_type} - 
+//         City: ${brew.city} -
+//         State: ${brew.state}
+//     `
+//     div.append(icon, header, p);
+//     brewList.appendChild(div);
+// }
+
 
 // // Get the parent element
 // const parent = document.getElementById("parent-id");
